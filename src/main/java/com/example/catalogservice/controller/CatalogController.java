@@ -22,6 +22,11 @@ public class CatalogController {
     private final CatalogService catalogService;
     private final ModelMapper modelMapper;
 
+    @GetMapping("/health-check")
+    public String check(){
+        return "It's Working";
+    }
+
     @GetMapping("/catalogs")
     public ResponseEntity<List<ResponseCatalog>> getCatalogs() {
 

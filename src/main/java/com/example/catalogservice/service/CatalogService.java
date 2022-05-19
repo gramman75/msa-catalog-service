@@ -20,8 +20,8 @@ public class CatalogService {
     public List<CatalogDto> getCatalogs() {
         List<CatalogEntity> catalogs = catalogRepository.findAll();
         List<CatalogDto> result = new ArrayList<>();
-        catalogs.forEach( caltalog ->{
-            CatalogDto map = modelMapper.map(caltalog, CatalogDto.class);
+        catalogs.forEach( catalog ->{
+            CatalogDto map = modelMapper.map(catalog, CatalogDto.class);
             result.add(map);
         });
 

@@ -1,5 +1,6 @@
 package com.example.catalogservice.entity;
 
+import lombok.Data;
 import org.hibernate.annotations.ColumnDefault;
 
 import javax.persistence.*;
@@ -7,6 +8,7 @@ import javax.ws.rs.DefaultValue;
 import java.util.Date;
 
 @Entity
+@Data
 @Table(name = "catalog")
 public class CatalogEntity {
 
