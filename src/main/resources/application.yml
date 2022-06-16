@@ -3,5 +3,10 @@ spring:
     active: @activatedProperties@
   application:
     name: catalog-service
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
 greeting:
   message: Welcome to the E-Commerce
