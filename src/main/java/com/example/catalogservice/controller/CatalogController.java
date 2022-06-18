@@ -16,7 +16,6 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/catalog-service")
 public class CatalogController {
 
     private final CatalogService catalogService;
